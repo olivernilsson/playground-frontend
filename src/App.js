@@ -5,9 +5,15 @@ import StartPage from "./views/StartPage/StartPage"
 
 function App() {
   return (
-    <div className="App">
-      <StartPage />
-    </div>
+    <Router>
+      <div className="App">
+        <main>
+          <Switch>
+            <Route exact path="/" component={StartPage} />
+          </Switch>
+        </main>
+      </div>
+    </Router>
   )
 }
 

@@ -19,7 +19,12 @@ class StartPage extends Component {
   }
 
   render() {
-    return <div></div>
+    return (
+      <div className="container-start">
+        <h1 className="heading-start">Welcome to the playground</h1>
+        <div className="bg-blue"></div>
+      </div>
+    )
   }
 }
 
