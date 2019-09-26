@@ -27,9 +27,7 @@ class StartPage extends Component {
           purpose of learning
         </p>
         <div className="bg-blue"></div>
-        <h1 className="heading-pink-start float-right">
-          Feel free to look around
-        </h1>
+        <h1 className="heading-pink-start">Feel free to look around</h1>
       </div>
     )
   }
