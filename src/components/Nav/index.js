@@ -42,6 +42,17 @@ class Nav extends Component {
           id="gallery"
           className="menu-item"
           exact
+          to="/tictactoe"
+          activeStyle={{
+            color: "#9ca8d0"
+          }}
+        >
+          Tic-tac-toe
+        </NavLink>
+        <NavLink
+          id="gallery"
+          className="menu-item"
+          exact
           to="/gallery"
           activeStyle={{
             color: "#9ca8d0"

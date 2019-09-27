@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+
+.wrapper-ttc {
+  background-color: $background-ttc;
+  height: 100vh;
+}
+
+.test-yellow {
+  font-size: 10rem;
+  color: $primary-ttc;
+}
+
+.test-red {
+  font-size: 10rem;
+  color: $secondary-ttc;
+}
