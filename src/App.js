@@ -1,8 +1,9 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import StartPage from "./views/StartPage/StartPage"
 import Nav from "./components/Nav/index"
+import StartPage from "./views/StartPage/StartPage"
+import FridgePoetry from "./views/FridgePoetry/index"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Nav />
           <Switch>
             <Route exact path="/" component={StartPage} />
+            <Route exact path="/fridgepoetry" component={FridgePoetry} />
           </Switch>
         </main>
       </div>

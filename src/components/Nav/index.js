@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { slide as Menu } from "react-burger-menu"
 import "./styles.scss"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 class Nav extends Component {
   constructor(props) {
@@ -15,13 +15,40 @@ class Nav extends Component {
 
   render() {
     return (
-      <Menu right={true}>
-        <Link id="home" className="menu-item" to="/">
+      <Menu right={true} disableAutoFocus>
+        <NavLink
+          id="home"
+          className="menu-item"
+          to="/"
+          exact
+          activeStyle={{
+            color: "#9ca8d0"
+          }}
+        >
           Start
-        </Link>
-        <Link id="home" className="menu-item" to="/test">
-          Test
-        </Link>
+        </NavLink>
+        <NavLink
+          id="fridgepoetry"
+          className="menu-item"
+          exact
+          to="/fridgepoetry"
+          activeStyle={{
+            color: "#9ca8d0"
+          }}
+        >
+          Fridge poetry
+        </NavLink>
+        <NavLink
+          id="gallery"
+          className="menu-item"
+          exact
+          to="/gallery"
+          activeStyle={{
+            color: "#9ca8d0"
+          }}
+        >
+          Gallery
+        </NavLink>
       </Menu>
     )
   }

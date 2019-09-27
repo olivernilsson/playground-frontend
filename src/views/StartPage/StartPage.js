@@ -20,14 +20,16 @@ class StartPage extends Component {
 
   render() {
     return (
-      <div className="container-start">
-        <h1 className="heading-start">Welcome to the playground</h1>
-        <p className="p-start">
-          This is a place where i play around with code and design for the
-          purpose of learning
-        </p>
-        <div className="bg-blue"></div>
-        <h1 className="heading-pink-start">Feel free to look around</h1>
+      <div className="wrapper-start">
+        <div className="container-start">
+          <h1 className="heading-start">Welcome to the playground</h1>
+          <p className="p-start">
+            This is a place where i play around with code and design for the
+            purpose of learning
+          </p>
+          <div className="bg-blue"></div>
+          <h1 className="heading-pink-start">Feel free to look around</h1>
+        </div>
       </div>
     )
   }

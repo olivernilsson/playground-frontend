@@ -1,3 +1,4 @@
+@import "../../sass/variables";
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -63,4 +64,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: $primary-start;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:hover {
+    transition: 200ms ease-in;
+    text-decoration: none;
+    color: $secondary-start;
+  }
 }
